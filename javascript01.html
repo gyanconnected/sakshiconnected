@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e7e42;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form {
+      background-color: #f7f6f2;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      width: 300px;
+    }
+
+    label {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      outline: none;
+      margin-bottom: 20px;
+    }
+
+    button[type="submit"] {
+      margin-left: 14px;  
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+      background-color: #1e73e9;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #155cc1;
+    }
+  </style>
+<title>Figma Project</title>    
+</head>    
+<body>
+<div class="form">
+<form>
+<label for="Enterhour">Enter Hour in 24 hr format</label>
+<input type="number"  id="inpBox"  name="hour" required pattern="[0-9]*">
+<button onClick="getInputValue(document.getElementById('inpBox').value)" type="submit">Submit</button>
+
+
+
+
+
+</form>
+
+
+
+
+</div>
+
+<script>
+function getInputValue(sakshi) {
+
+
+if (  sakshi > 6 && sakshi <  12 ) {
+    alert("Good Morning");
+    
+  }
+else if (sakshi > 12 && sakshi < 15 ) {
+alert("Good Afternoon"); 
+
+}
+
+   else {
+    alert("Good Night") ;
+  }
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+</html>    
